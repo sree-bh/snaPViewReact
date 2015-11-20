@@ -1,0 +1,53 @@
+{
+  "name": "module-name",
+  "version": "10.3.1",
+  "description": "An example module to illustrate the usage of a package.json",
+  "author": "Sree-Bh>",
+  "contributors": [
+    {
+      "name": "Sritama B",
+      "email": "sritama.imps99@gmail.com"
+    }
+  ],
+  "bin": {
+    "module-name": "./bin/module-name"
+  },
+  "scripts": {
+    "build-js": "browserify -t [ babelify --presets [ react ] ] react-snap/main.js -o react-snap/build/app.js",
+    "watch-js": "watchify -t [ babelify --presets [ react ] ] react-snap/main.js -o react-snap/build/app.js d"
+  },
+  "main": "lib/foo.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodejitsu/browsenpm.org"
+  },
+  "bugs": {
+    "url": "https://github.com/nodejitsu/browsenpm.org/issues"
+  },
+  "keywords": [
+    "nodejitsu",
+    "example",
+    "browsenpm"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "babel-preset-react": "^6.1.18",
+    "babelify": "^7.2.0",
+    "browserify": "^12.0.1",
+    "connect": "^3.4.0",
+    "node-jsx": "~0.11.0",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "serve-static": "^1.10.0",
+    "socket.io": "^1.1.0",
+    "watchify": "^3.6.1"
+  },
+  "preferGlobal": true,
+  "private": true,
+  "publishConfig": {
+    "registry": "https://your-private-hosted-npm.registry.nodejitsu.com"
+  },
+  "subdomain": "foobar",
+  "analyze": true,
+  "license": "MIT"
+}

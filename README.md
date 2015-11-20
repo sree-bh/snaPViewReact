@@ -1,2 +1,4 @@
 # snaPViewReact
-This is an image slider developed using reactJs
+[WIP] This is an image slider developed using reactJs
+
+
