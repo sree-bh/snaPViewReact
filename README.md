@@ -1,5 +1,5 @@
 # snaPViewReact
-[WIP] This is an image slider developed using reactJs
+This is an image slider developed using reactJs
 
 Steps:
 1. cd ../snaPViewReact.
