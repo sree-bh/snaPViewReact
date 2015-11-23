@@ -14,7 +14,7 @@
   },
   "scripts": {
     "build-js": "browserify -t [ babelify --presets [ react ] ] react-snap/main.js -o react-snap/build/app.js",
-    "watch-js": "watchify -t [ babelify --presets [ react ] ] react-snap/main.js -o react-snap/build/app.js d"
+    "watch-js": "watchify -t [ babelify --presets [ react ] ] react-snap/main.js -o react-snap/build/app.js -d"
   },
   "main": "lib/foo.js",
   "repository": {

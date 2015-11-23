@@ -1,0 +1,95 @@
+* {
+	font-family: sans-serif;
+}
+body {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin: 0;
+	background: #aaccaa;
+}
+
+h3 {
+	min-width: 200px;
+	margin: 5px 0;
+	text-align: center;
+	color: #eeeeee;
+	font-size: 30px;
+}
+footer {
+	margin: 5px;
+	text-align: right;
+	color: #eeeeee;
+}
+
+section {
+	width: 60%;
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	margin: 5px auto;
+	border: 1px solid;
+}
+
+.flex-container {
+    height:100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.flex-container .flex-item {
+    -webkit-flex: auto;
+    flex: auto;
+}
+
+.controls {
+	margin: 5px 0;
+}
+
+.slide-container {
+	width: 100%;
+	height: calc(100% - 41px);
+	position: absolute;
+	z-index: 1;
+	box-sizing: border-box;
+	margin: 0;
+	left: 0;
+	right: 0;
+	-webkit-transition-property:width; 
+	transition-property:width;
+}
+
+.next {
+	z-index: 2;
+}
+
+.shown {
+	z-index: 5;
+}
+
+.slide-container.left {
+	width: 0;
+}
+.animate {
+	-webkit-transition-delay: .2s;
+	transition-delay: .2s;
+	-webkit-transition-duration: 1.5s;
+	transition-duration: 1.5s;
+}
+
+.slide-container.right {
+	width: 100%;
+}
+
+.slide {
+	width: 100%;
+	height: 100%;
+	background-attachment: fixed;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
