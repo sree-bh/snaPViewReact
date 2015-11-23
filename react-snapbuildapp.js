@@ -1,1 +1,0 @@
-console.error("Error: Cannot find module 'c:\\Users\\bsritama\\GIT_Repo\\snaPViewReact\\react-snapmain.js' from 'c:\\Users\\bsritama\\GIT_Repo\\snaPViewReact'");
