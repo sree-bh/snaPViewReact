@@ -1,6 +1,5 @@
 'use strict';
 
-
 var ReactRouter = require('react-router'),
     Router = ReactRouter.Router,
     Route = ReactRouter.Route,
@@ -74,9 +73,6 @@ var SnapViewer = React.createClass({
 	},
 	getInitialState: function () {
 		return this.getStateFromStore();
-    },
-    componentWillReceiveProps(nextProps) {
-        //this.setState(this.getStateFromStore(nextProps));
     },
     prev: function (event) {
     	this.fnslideShow(true, true);
